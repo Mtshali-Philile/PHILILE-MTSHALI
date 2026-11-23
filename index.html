@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Philile Mtshali | HR Management Portfolio</title>
+<meta name="description" content="Portfolio of Philile Ayanda Mtshali, Human Resources Management student at Vaal University of Technology.">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<style>
+:root{--bg:#fff;--alt:#faf3f5;--text:#2b2630;--muted:#6b6370;--accent:#a8345a;--accent-d:#7d2442;--dark:#2a1a24;--card:#fff;--line:#ecdfe4}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:'Segoe UI',system-ui,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.65}
+a{color:inherit;text-decoration:none}
+.container{max-width:1050px;margin:0 auto;padding:0 20px}
+.section{padding:70px 20px}
+.bg-alt{background:var(--alt)}
+h2{font-size:2rem;text-align:center}
+.underline{width:60px;height:4px;background:var(--accent);margin:10px auto 36px;border-radius:2px}
+.navbar{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:14px 24px;background:rgba(255,255,255,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.logo{font-weight:700;font-size:1.3rem}.logo span{color:var(--accent)}
+.nav-links{display:flex;gap:24px;list-style:none}
+.nav-links a{font-weight:500;color:var(--muted)}.nav-links a:hover{color:var(--accent)}
+.hamburger{display:none;background:none;border:0;cursor:pointer;padding:6px}
+.bar{display:block;width:24px;height:3px;background:var(--text);margin:4px 0;border-radius:2px}
+.hero-section{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:100px 20px 60px;background:linear-gradient(135deg,#fdf1f5,#f3e3ea)}
+.hero-content{max-width:700px}
+.profile-img{width:190px;height:190px;object-fit:cover;object-position:center 25%;border-radius:50%;border:5px solid #fff;box-shadow:0 8px 24px rgba(125,36,66,.25);margin-bottom:20px}
+.hero-content h1{font-size:2.4rem;line-height:1.2}
+.highlight{color:var(--accent)}
+.role{font-weight:600;color:var(--accent-d);margin:8px 0 14px}
+.hero-content p{color:var(--muted)}
+.cta-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:26px 0}
+.btn,.cta-btn{display:inline-block;padding:12px 24px;border-radius:30px;font-weight:600;border:2px solid var(--accent);transition:.2s}
+.primary-btn,.cta-btn{background:var(--accent);color:#fff}
+.primary-btn:hover,.cta-btn:hover{background:var(--accent-d);border-color:var(--accent-d)}
+.secondary-btn{color:var(--accent)}.secondary-btn:hover{background:var(--accent);color:#fff}
+.social-icons{display:flex;gap:14px;justify-content:center}
+.social-icons a{width:42px;height:42px;display:grid;place-items:center;border-radius:50%;background:#fff;color:var(--accent);box-shadow:0 2px 8px rgba(0,0,0,.1);transition:.2s}
+.social-icons a:hover{background:var(--accent);color:#fff}
+#about p{max-width:780px;margin:0 auto 16px;color:var(--muted)}
+.grid-three{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.grid-two{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px;box-shadow:0 2px 10px rgba(0,0,0,.04)}
+.card h3{margin-bottom:8px;color:var(--accent-d)}
+.card p{color:var(--muted)}
+.card i.ico{font-size:1.5rem;color:var(--accent);margin-bottom:10px}
+.project-card{display:flex;flex-direction:column;justify-content:space-between;gap:14px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{background:var(--alt);color:var(--accent-d);font-size:.8rem;padding:4px 12px;border-radius:20px;border:1px solid var(--line)}
+.proj-link{color:var(--accent);font-weight:600}.proj-link:hover{text-decoration:underline}
+.timeline{max-width:780px;margin:0 auto;border-left:3px solid var(--accent);padding-left:24px}
+.t-item{margin-bottom:28px;position:relative}
+.t-item::before{content:"";position:absolute;left:-33px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--accent);border:3px solid #fff}
+.t-item .date{font-size:.85rem;color:var(--accent-d);font-weight:600}
+.t-item h3{margin:2px 0}
+.t-item .org{color:var(--muted);font-style:italic;margin-bottom:6px}
+.t-item ul{padding-left:18px;color:var(--muted)}
+.cert-list{list-style:none;max-width:780px;margin:0 auto}
+.cert-list li{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:14px 18px;margin-bottom:12px;color:var(--muted)}
+.cert-list strong{color:var(--text);display:block}
+.bg-dark{background:var(--dark);color:#f3e8ee;text-align:center}
+.bg-dark p{margin-bottom:14px}
+.contact-box{margin-top:20px}
+.social-text{margin-top:18px}.social-text a:hover{color:#f0a9c3}
+footer{background:#1a0f16;color:#b9a8b2;text-align:center;padding:18px;font-size:.9rem}
+@media(max-width:760px){
+ .hamburger{display:block}
+ .nav-links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:#fff;border-bottom:1px solid var(--line)}
+ .nav-links.open{display:flex}
+ .nav-links a{display:block;padding:14px 24px}
+ .hero-content h1{font-size:1.9rem}
+}
+</style>
+</head>
+<body>
+
+<header class="navbar">
+  <a href="#home" class="logo">Philile<span>.</span></a>
+  <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+  </button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#certificates">Certificates</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</header>
+
+<section id="home" class="hero-section">
+  <div class="hero-content">
+    <img src="Images/Philile.jpg" alt="Philile Mtshali" class="profile-img">
+    <h1>Hi, I'm <span class="highlight">Philile Mtshali</span></h1>
+    <p class="role">Human Resources Management Graduate</p>
+    <p>Diploma in Human Resources Management student at Vaal University of Technology, awaiting final results. I focus on HR administration, recruitment, and learning and development (L&amp;D).</p>
+    <div class="cta-buttons">
+      <a href="#projects" class="btn primary-btn">View my projects</a>
+      <a href="cv.pdf" download="Philile_Mtshali_CV.pdf" class="btn secondary-btn"><i class="fas fa-download"></i> Download CV</a>
+    </div>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/phililemtshali" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/Mtshali-Philile" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="mailto:mtshaliphilile39@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section container">
+  <h2>About me</h2>
+  <div class="underline"></div>
+  <p>I'm a Human Resources Management graduate from Vaal University of Technology with practical experience in administrative support, record keeping, document organisation and team coordination. My studies have covered talent management, recruitment, training and development needs, assessment methods, e-learning and leadership development.</p>
+  <p>I have completed Sage Payroll &amp; HR training and I'm proficient in Microsoft Office. I'm looking for a role in training administration, employee development or HR support where I can grow and contribute to organisational success. I'm based in Pietermaritzburg and willing to relocate to Durban.</p>
+</section>
+
+<section id="skills" class="section bg-alt">
+  <div class="container">
+    <h2>Core competencies</h2>
+    <div class="underline"></div>
+    <div class="grid-three">
+      <div class="card"><i class="fas fa-users ico"></i><h3>HR &amp; L&amp;D</h3><p>Talent management, recruitment, training and development needs, L&amp;D assessment methods, e-learning and leadership development</p></div>
+      <div class="card"><i class="fas fa-folder-open ico"></i><h3>Administration &amp; records</h3><p>Administrative support, record keeping, document organisation, scheduling, coordination, confidentiality and attention to detail</p></div>
+      <div class="card"><i class="fas fa-laptop ico"></i><h3>Computer skills</h3><p>Microsoft Word, Excel, Outlook and PowerPoint; Sage Payroll &amp; HR (trained)</p></div>
+      <div class="card"><i class="fas fa-handshake ico"></i><h3>Professional skills</h3><p>Communication, teamwork, time management, problem solving, interpersonal skills and conflict resolution</p></div>
+      <div class="card"><i class="fas fa-scale-balanced ico"></i><h3>Reward &amp; labour relations</h3><p>Remuneration policy and pay structure design, broad-banding, worker participation</p></div>
+      <div class="card"><i class="fas fa-language ico"></i><h3>Languages</h3><p>English (fluent), IsiZulu (fluent)</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section container">
+  <h2>Projects &amp; coursework</h2>
+  <div class="underline"></div>
+  <div class="grid-two">
+    <div class="card project-card">
+      <div>
+        <h3>Discovery Limited Remuneration Framework</h3>
+        <p>Group assignment designing a broad-banded pay framework for a large South African financial services company. It covers organisational context, a remuneration policy, pay structure design, individual pay differentiation, a broad-banding proposal, and implementation challenges with recommendations.</p>
+      </div>
+      <div class="tags"><span>Reward</span><span>Remuneration</span><span>Broad-banding</span><span>Pay structure</span></div>
+
+    </div>
+    <div class="card project-card">
+      <div>
+        <h3>Worker Participation in the Workplace</h3>
+        <p>Group presentation on the forms of worker participation, the factors that make it succeed, and its effect on organisational outcomes.</p>
+      </div>
+      <div class="tags"><span>Labour relations</span><span>Presentation</span><span>Teamwork</span></div>
+    </div>
+    <div class="card project-card">
+      <div>
+        <h3>Talent Management &amp; Recruitment</h3>
+        <p>Researched talent identification, employee development and internal and external recruitment. Contributed to a recruitment approach for appointing ten university lecturers and prepared a group PowerPoint presentation.</p>
+      </div>
+      <div class="tags"><span>Recruitment</span><span>Talent management</span><span>VUT 2026</span></div>
+    </div>
+    <div class="card project-card">
+      <div>
+        <h3>Training, Development &amp; Assessment</h3>
+        <p>Examined training and development needs, curriculum content and sequencing, and diagnostic, formative and summative assessment methods used to address skills gaps, monitor progress and evaluate learning.</p>
+      </div>
+      <div class="tags"><span>L&amp;D</span><span>Assessment</span><span>E-learning</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="section bg-alt">
+  <div class="container">
+    <h2>Experience &amp; education</h2>
+    <div class="underline"></div>
+    <div class="timeline">
+      <div class="t-item">
+        <span class="date">November 2026</span>
+        <h3>Volunteer Election Observer</h3>
+        <p class="org">Ground Work Collective</p>
+        <ul>
+          <li>Completed observer training and reviewed the code of conduct and reporting procedures.</li>
+          <li>Recorded factual observations accurately and worked within assigned polling-station procedures.</li>
+        </ul>
+      </div>
+      <div class="t-item">
+        <span class="date">15 June – 31 July 2026</span>
+        <h3>Admin Assistant (Volunteer)</h3>
+        <p class="org">IIK Organization NPO, Youth Upskilling Project</p>
+        <ul>
+          <li>Provided administrative support for the day-to-day running of the project.</li>
+          <li>Maintained project records and organised documentation for accurate record keeping.</li>
+          <li>Helped coordinate volunteer schedules and activities, and passed updates between team members and project leadership.</li>
+        </ul>
+      </div>
+      <div class="t-item">
+        <span class="date">Expected graduation April 2027</span>
+        <h3>Diploma in Human Resources Management</h3>
+        <p class="org">Vaal University of Technology</p>
+      </div>
+      <div class="t-item">
+        <span class="date">Completed 2021</span>
+        <h3>National Senior Certificate (Matric)</h3>
+        <p class="org">Nomaswazi High School</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="certificates" class="section container">
+  <h2>Certifications &amp; achievements</h2>
+  <div class="underline"></div>
+  <ul class="cert-list">
+    <li><strong>Student Membership Certificate</strong>South African Board for People Practices (SABPP), 2026</li>
+    <li><strong>Sage Payroll &amp; HR Training</strong>Certified payroll and HR administration training</li>
+    <li><strong>Youth Upskilling Project Certificate</strong>IIK Organization</li>
+    <li><strong>Basic Computer Course Certificate</strong>Tsogo Sun Learning Academy</li>
+  </ul>
+</section>
+
+<section id="contact" class="section bg-dark">
+  <div class="container">
+    <h2>Get in touch</h2>
+    <div class="underline"></div>
+    <p>Looking for an HR or training administration team member? Let's connect.</p>
+    <div class="contact-box">
+      <a href="mailto:mtshaliphilile39@gmail.com" class="cta-btn">Email me</a>
+      <p class="social-text">
+        <a href="https://www.linkedin.com/in/phililemtshali" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        &nbsp;&bull;&nbsp;
+        <a href="https://github.com/Mtshali-Philile" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+      </p>
+      <p class="social-text">083 628 0238 &bull; Pietermaritzburg, KwaZulu-Natal</p>
+      <p>References available on request.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Philile Ayanda Mtshali. Built with HTML, CSS and JavaScript.</p>
+</footer>
+
+<script>
+const hb = document.getElementById('hamburger'), nav = document.getElementById('nav-links');
+hb.addEventListener('click', () => {
+  const open = nav.classList.toggle('open');
+  hb.setAttribute('aria-expanded', open);
+});
+nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  nav.classList.remove('open'); hb.setAttribute('aria-expanded', 'false');
+}));
+</script>
+</body>
+</html>
